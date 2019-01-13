@@ -1,0 +1,4 @@
+1. 打开一个cmd窗口 使用cd命令切换目录到H:\redis运行下面命令
+redis-server.exe redis.windows.conf
+2.这时候另起一个cmd窗口，原来的不要关闭，不然就无法访问服务端了（切换到redis目录下运行下面命令）
+redis-cli.exe -h 127.0.0.1 -p 6379

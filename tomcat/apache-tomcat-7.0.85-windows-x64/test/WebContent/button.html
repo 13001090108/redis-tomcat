@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<button type="button" onclick="hello()">Please Click me !</button>
+		Field1:<input type="text" id="field1" value=""><br>
+		Field2:<input type="text" id="field2"><br><br>
+		<button type="button" onclick="copyText()">复制文本></button>
+		<p>当按钮被单击触发时触发函数。此函数把文本从Field1复制到Field2中。</p>
+	</body>
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script>
+		function copyText()
+		{
+			document.getElementById("field2").value=document.getElementById("field1").value;
+		}
+	</script>
+	<script>
+		function hello()
+		{
+				var url="/test/hello"
+				var value=document.getElementById("field1").value;
+				var param="username="+value;
+				$.get(url,param,function(){
+					alert("lsc");
+				})
+		}
+	
+	</script>
+</html>
+
+

@@ -1,0 +1,223 @@
+11-Apr-2018 16:16:55.278 警告 [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+ java.lang.UnsatisfiedLinkError: H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.loadLibrary0(Unknown Source)
+	at java.lang.System.loadLibrary(Unknown Source)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:79)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1174)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1439)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:605)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:656)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+
+11-Apr-2018 16:16:55.372 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.7
+11-Apr-2018 16:16:55.372 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2018 19:53:05 UTC
+11-Apr-2018 16:16:55.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.7.0
+11-Apr-2018 16:16:55.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2018 16:16:55.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2018 16:16:55.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+11-Apr-2018 16:16:55.375 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_144
+11-Apr-2018 16:16:55.375 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+11-Apr-2018 16:16:55.375 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2018 16:16:55.377 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:16:55.377 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:16:55.378 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\conf\logging.properties
+11-Apr-2018 16:16:55.378 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2018 16:16:55.378 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2018 16:16:55.378 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2018 16:16:55.379 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Apr-2018 16:16:55.379 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:16:55.379 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:16:55.380 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\temp
+11-Apr-2018 16:16:55.670 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:16:55.734 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:16:55.739 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:16:55.741 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:16:55.741 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 859 ms
+11-Apr-2018 16:16:55.776 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Apr-2018 16:16:55.777 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.7
+11-Apr-2018 16:16:55.783 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs]
+11-Apr-2018 16:16:56.063 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs] has finished in [279] ms
+11-Apr-2018 16:16:56.064 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples]
+11-Apr-2018 16:16:56.272 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples] has finished in [209] ms
+11-Apr-2018 16:16:56.272 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager]
+11-Apr-2018 16:16:56.290 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager] has finished in [18] ms
+11-Apr-2018 16:16:56.291 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager]
+11-Apr-2018 16:16:56.305 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager] has finished in [14] ms
+11-Apr-2018 16:16:56.306 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT]
+11-Apr-2018 16:16:56.318 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT] has finished in [12] ms
+11-Apr-2018 16:16:56.320 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:16:56.331 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:16:56.333 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 591 ms
+11-Apr-2018 16:17:20.225 严重 [main] org.apache.catalina.startup.Catalina.stopServer Could not contact [localhost:[8005]]. Tomcat may not be running.
+11-Apr-2018 16:18:32.654 警告 [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+ java.lang.UnsatisfiedLinkError: H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.loadLibrary0(Unknown Source)
+	at java.lang.System.loadLibrary(Unknown Source)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:79)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1174)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1439)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:605)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:656)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+
+11-Apr-2018 16:18:32.716 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.7
+11-Apr-2018 16:18:32.717 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2018 19:53:05 UTC
+11-Apr-2018 16:18:32.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.7.0
+11-Apr-2018 16:18:32.718 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2018 16:18:32.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2018 16:18:32.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+11-Apr-2018 16:18:32.719 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_144
+11-Apr-2018 16:18:32.720 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+11-Apr-2018 16:18:32.720 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2018 16:18:32.720 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:18:32.721 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:18:32.721 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\conf\logging.properties
+11-Apr-2018 16:18:32.722 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2018 16:18:32.722 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2018 16:18:32.722 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2018 16:18:32.723 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Apr-2018 16:18:32.723 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:18:32.723 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:18:32.723 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\temp
+11-Apr-2018 16:18:32.797 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:18:32.826 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:18:32.831 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:18:32.832 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:18:32.833 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 343 ms
+11-Apr-2018 16:18:32.852 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Apr-2018 16:18:32.852 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.7
+11-Apr-2018 16:18:32.858 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs]
+11-Apr-2018 16:18:33.060 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs] has finished in [201] ms
+11-Apr-2018 16:18:33.060 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples]
+11-Apr-2018 16:18:33.261 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples] has finished in [201] ms
+11-Apr-2018 16:18:33.261 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager]
+11-Apr-2018 16:18:33.280 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager] has finished in [19] ms
+11-Apr-2018 16:18:33.280 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager]
+11-Apr-2018 16:18:33.295 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager] has finished in [15] ms
+11-Apr-2018 16:18:33.295 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT]
+11-Apr-2018 16:18:33.307 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT] has finished in [12] ms
+11-Apr-2018 16:18:33.309 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:18:33.320 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:18:33.323 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 489 ms
+11-Apr-2018 16:36:49.057 警告 [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library failed to load. The error reported was [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform]
+ java.lang.UnsatisfiedLinkError: H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\bin\tcnative-1.dll: Can't load AMD 64-bit .dll on a IA 32-bit platform
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.loadLibrary0(Unknown Source)
+	at java.lang.System.loadLibrary(Unknown Source)
+	at org.apache.tomcat.jni.Library.<init>(Library.java:42)
+	at org.apache.tomcat.jni.Library.initialize(Library.java:178)
+	at org.apache.catalina.core.AprLifecycleListener.init(AprLifecycleListener.java:198)
+	at org.apache.catalina.core.AprLifecycleListener.isAprAvailable(AprLifecycleListener.java:107)
+	at org.apache.catalina.connector.Connector.<init>(Connector.java:79)
+	at org.apache.catalina.startup.ConnectorCreateRule.begin(ConnectorCreateRule.java:64)
+	at org.apache.tomcat.util.digester.Digester.startElement(Digester.java:1174)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1439)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:605)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:656)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:306)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:491)
+
+11-Apr-2018 16:36:49.113 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/9.0.7
+11-Apr-2018 16:36:49.113 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2018 19:53:05 UTC
+11-Apr-2018 16:36:49.114 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         9.0.7.0
+11-Apr-2018 16:36:49.115 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2018 16:36:49.115 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2018 16:36:49.115 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          x86
+11-Apr-2018 16:36:49.115 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files (x86)\Java\jre1.8.0_144
+11-Apr-2018 16:36:49.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+11-Apr-2018 16:36:49.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2018 16:36:49.116 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:36:49.117 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:36:49.117 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\conf\logging.properties
+11-Apr-2018 16:36:49.117 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2018 16:36:49.118 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2018 16:36:49.118 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2018 16:36:49.118 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+11-Apr-2018 16:36:49.118 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:36:49.119 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7
+11-Apr-2018 16:36:49.119 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\temp
+11-Apr-2018 16:36:49.208 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:36:49.236 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:36:49.241 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:36:49.242 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2018 16:36:49.243 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 351 ms
+11-Apr-2018 16:36:49.262 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+11-Apr-2018 16:36:49.262 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/9.0.7
+11-Apr-2018 16:36:49.268 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs]
+11-Apr-2018 16:36:49.468 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\docs] has finished in [200] ms
+11-Apr-2018 16:36:49.469 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples]
+11-Apr-2018 16:36:49.664 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\examples] has finished in [194] ms
+11-Apr-2018 16:36:49.664 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager]
+11-Apr-2018 16:36:49.682 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\host-manager] has finished in [18] ms
+11-Apr-2018 16:36:49.683 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager]
+11-Apr-2018 16:36:49.697 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\manager] has finished in [15] ms
+11-Apr-2018 16:36:49.697 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT]
+11-Apr-2018 16:36:49.708 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [H:\tomcat\apache-tomcat-9.0.7-windows-x64\apache-tomcat-9.0.7\webapps\ROOT] has finished in [11] ms
+11-Apr-2018 16:36:49.711 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Apr-2018 16:36:49.718 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2018 16:36:49.721 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 478 ms
